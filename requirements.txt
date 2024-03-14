@@ -1,3 +1,2 @@
-atriumdb
-atriumdb[mariadb]
-atriumdb[cli]
+atriumdb[mariadb,cli]
+wfdb
