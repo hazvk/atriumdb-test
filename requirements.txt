@@ -1,0 +1,3 @@
+atriumdb
+atriumdb[mariadb]
+atriumdb[cli]
