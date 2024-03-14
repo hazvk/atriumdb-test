@@ -6,7 +6,7 @@ Sourced from [https://physionet.org/content/mitdb/1.0.0/](https://physionet.org/
 ### Environment setup
 ```
 # make sure Docker installed
-docker run --name atriumdb-mariadb -d -p 127.0.0.1:3306:3306 -v ./mariadb-data:/var/lib/mysql -e MARIADB_ROOT_PASSWORD='password' mariadb:latest
+
 pip install virtualenv
 sudo apt-get install -y libmariadb-dev
 ```
@@ -16,4 +16,19 @@ sudo apt-get install -y libmariadb-dev
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+```
+
+## Usage
+```
+docker run --detach --name atriumdb-mariadb -p 3306:3306 -v ./_data/mariadb-serve:/var/lib/mariadb -e MARIADB_USER='atrium_tester' -e MARIADB_PASSWORD='password' -e MARIADB_ROOT_PASSWORD='root_password' -e MARIADB_DATABASE='atriumdb-test' mariadb:latest
+
+python src/write_data.py
+python src/read_data.py
+```
+
+### Read underlying data source
+```
+# With container running
+
+mysql -h 172.17.0.2 -u [root | atrium_tester] -p
 ```
