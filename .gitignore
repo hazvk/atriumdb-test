@@ -1,2 +1,5 @@
-mariadb-data/
+__pycache__/
+
 venv/
+
+mariadb-data/
