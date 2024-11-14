@@ -11,4 +11,4 @@ def graph_read_data(start_time_nano = 0, end_time_nano = 1805555050000):
     plt.plot(read_time_data, read_value_data)
     plt.show()
 
-graph_read_data(end_time_nano=2777777000/2)
+graph_read_data(end_time_nano=2*10**9)
