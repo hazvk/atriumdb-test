@@ -36,7 +36,7 @@ class RecordHundredData:
         new_measure_id = sdk.insert_measure(measure_tag=self.sig_name, freq=self.freq_hz, freq_units=FREQ_UNITS_HZ)
         
         # # EXTRA ADDED: Calculate the digital to analog scale factors.
-        # # Not required since this is already an analog signal, this is only needed for digital signals
+        # # Only required for digital signals to scale data??
         # segment = self.record
         # assert len(segment.adc_gain) == 2 and (segment.adc_gain[0] == segment.adc_gain[1]) # not sure why this is an array, just take first val
         # gain = segment.adc_gain[0]
