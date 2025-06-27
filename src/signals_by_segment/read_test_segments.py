@@ -1,7 +1,7 @@
 import math
 from matplotlib import pyplot as plt
 
-from lib.atriumdb_mariadb_sdk import sdk
+from src.lib.atriumdb_mariadb_sdk import sdk
 
 measure_id =  2
 new_device_id =  2

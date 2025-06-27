@@ -3,7 +3,7 @@ import numpy as np
 import wfdb
 from atriumdb import AtriumSDK
 
-from lib.atriumdb_mariadb_sdk import sdk
+from src.lib.atriumdb_mariadb_sdk import sdk
 
 FREQ_UNITS_HZ = "Hz"
 TIME_UNITS = 's'
@@ -59,7 +59,7 @@ class RecordSegmentData:
                 sdk.write_segment(measure_id, new_device_id, digital_signal, start_time_s, freq=freq_hz,
                     scale_m=scale_m, scale_b=scale_b, time_units=TIME_UNITS, freq_units=FREQ_UNITS_HZ)
 
-        print("Semment inserted")
+        print("Segment inserted")
         print("measure_id = ", measure_id)
         print("start_time_s = ", 0)
         print("end_time_s = ", end_time_s)

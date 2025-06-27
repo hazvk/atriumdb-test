@@ -2,7 +2,7 @@ import numpy as np
 import wfdb
 from atriumdb import AtriumSDK
 
-from lib.atriumdb_mariadb_sdk import sdk
+from src.lib.atriumdb_mariadb_sdk import sdk
 
 FREQ_UNITS_HZ = "Hz"
 
