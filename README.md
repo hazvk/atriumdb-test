@@ -5,9 +5,9 @@
 The purpose of this repo is to follow the [AtriumDB tutorial for Standard Data Access](https://docs.atriumdb.io/tutorial.html#standard-data-access).
 
 It takes it one step further to play with data in three different ways:
+1. [Analog-transformed signal data](./src/analog_transformed_signal_data/)
 1. [Signal data](./src/signal_data/)
-2. [Digital signal data](./src/digital_signal_data/)
-3. [Segmented signal data](./src/signals_by_segment/)
+1. [Segmented signal data](./src/signals_by_segment/)
 
 ## Setup
 
