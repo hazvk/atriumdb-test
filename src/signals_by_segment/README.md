@@ -7,6 +7,6 @@ Segments are often used for high-frequency waveforms or signals.
 
 From root of project, run:
 ```
-PYTHONPATH=. python src/signals_by_segment/write_data.py
-PYTHONPATH=. python src/signals_by_segment/read_data.py
+python src/signals_by_segment/write_segments.py
+python src/signals_by_segment/read_segments_sample.py
 ```

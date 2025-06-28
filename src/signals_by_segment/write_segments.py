@@ -3,6 +3,10 @@ import numpy as np
 import wfdb
 from atriumdb import AtriumSDK
 
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))  # Add src to path
+
 from src.lib.atriumdb_mariadb_sdk import sdk
 
 FREQ_UNITS_HZ = "Hz"

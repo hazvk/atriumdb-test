@@ -1,6 +1,10 @@
 import math
 from matplotlib import pyplot as plt
 
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))  # Add src to path
+
 from src.lib.atriumdb_mariadb_sdk import sdk
 
 measure_id =  2

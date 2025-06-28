@@ -52,8 +52,8 @@ docker run --detach --name atriumdb-mariadb -p 3306:3306 -v ./_data/mariadb-serv
 
 The scripts listed below have been written to ingest sample datasets. E.g. for [Signal data](./src/signal_data/), you can run the following:
 ```
-PYTHONPATH=. python src/signal_data/write_data.py
-PYTHONPATH=. python src/signal_data/read_data.py
+python src/signal_data/write_data.py
+python src/signal_data/read_data.py
 ```
 
 ### Read underlying data source

@@ -6,6 +6,6 @@ The example scripts here do NOT include any factors that accomodate for digitisa
 
 From root of project, run:
 ```
-PYTHONPATH=. python src/signal_data/write_data.py
-PYTHONPATH=. python src/signal_data/read_data.py
+python src/signal_data/write_data.py
+python src/signal_data/read_data_sample.py
 ```

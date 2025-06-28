@@ -6,6 +6,6 @@ Method used as per tutorial to insert and read data.
 
 From root of project, run:
 ```
-PYTHONPATH=. python src/analog_transformed_signal_data/write_data.py
-PYTHONPATH=. python src/analog_transformed_signal_data/read_data.py
+python src/analog_transformed_signal_data/write_analog_data.py
+python src/analog_transformed_signal_data/read_analog_data_sample.py
 ```
